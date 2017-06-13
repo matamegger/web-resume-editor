@@ -10,10 +10,13 @@
 </head>
 
 <body>
+    <div id="app">{{message}}</div>
     <div class="container">
         <div id="editor"></div>
     </div>
 
+    <!-- TODO: Replace `vue.js` with `vue.min.js` in production -->
+    <script src="./node_modules/vue/dist/vue.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/trumbowyg/dist/trumbowyg.min.js"></script>
     <script src="./node_modules/trumbowyg/dist/plugins/base64/trumbowyg.base64.js"></script>
@@ -24,6 +27,7 @@
     <script src="./node_modules/trumbowyg/dist/plugins/upload/trumbowyg.upload.js"></script>
 
     <script src="app/js/main.js"></script>
+    <script src="app/js/editor.js"></script>
 </body>
 
 </html>
